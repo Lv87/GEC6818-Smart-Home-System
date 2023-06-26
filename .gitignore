@@ -50,3 +50,25 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# 图片与音频文件
+image/device/
+image/photo/
+music/
+
+# 编译后文件
+target/
+
+# 历史文件，杂项
+bak/
+/beep_btn.h
+
+# vscode配置文件
+.vscode/
+
+# 测试文件
+beep_drv/beep_app.c
+led_drv/led_app.c
+
+# makefile
+Makefile
