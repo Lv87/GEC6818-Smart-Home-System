@@ -245,7 +245,7 @@ static long gec6818_beep_ioctl(struct file *filep, unsigned int cmd, unsigned lo
 		break;
 
 	default:
-		break;
+		return -EINVAL;
 	}
 	return rc;
 }
