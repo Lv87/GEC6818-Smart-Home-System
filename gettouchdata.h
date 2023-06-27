@@ -13,13 +13,7 @@
 #include <stdbool.h>
 
 // 定义枚举类型
-enum motion
-{
-    left,
-    right,
-    up,
-    down
-};
+enum motion { left = 1, right, up, down };
 
 struct touch_data
 {

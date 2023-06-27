@@ -80,7 +80,7 @@ struct touch_data get_touch_data(void)
 	int dif_y = y1 - y2 > 0 ? y1 - y2 : y2 - y1;
 
 	if (x1 == 0 || x2 == 0)
-		ts_data.m = -1;
+		ts_data.m = 0;
 
 	if (x1 > x2 && dif_x > dif_y)
 	{
@@ -103,7 +103,7 @@ struct touch_data get_touch_data(void)
 		ts_data.m = down;
 	}
 	else
-		ts_data.m = -1;
+		ts_data.m = 0;
 
 	// 3，释放资源
 	close(tp);

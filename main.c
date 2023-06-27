@@ -24,7 +24,6 @@ int main(void)
 			while (1)
 			{
 				memset(&ts_xy, 0, sizeof(struct touch_data));
-				ts_xy.m = -1;
 				ts_xy = get_touch_data();
 				sleep(1);
 				if (key)
